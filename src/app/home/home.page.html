@@ -4,13 +4,19 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      Home
+      <h3>{{ 'PAGES.HOME.TITLE_PAGE' | translate }}</h3>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the
-    <a target="_blank" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
+  <h3>{{ 'PAGES.HOME.TITLE' | translate }}</h3>
+
+  <p>
+    {{ 'PAGES.HOME.CONTENT' | translate }}
+  </p>
+
+  <ion-button color="primary" (click)="cambiaIdioma('es')">{{ 'PAGES.HOME.BTN_ES' | translate }}</ion-button>
+  <ion-button color="secondary" (click)="cambiaIdioma('en')">{{ 'PAGES.HOME.BTN_EN' | translate }}</ion-button>
+
 </ion-content>
