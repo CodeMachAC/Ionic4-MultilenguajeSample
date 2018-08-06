@@ -10,7 +10,7 @@ import { HomePage } from './home.page';
 import { HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
-// COnfiguración de traducción
+// Configuración de traducción
 import { customTranslateLoader } from '../app.module';
 
 @NgModule({
